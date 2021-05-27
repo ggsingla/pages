@@ -1,0 +1,229 @@
+:root {
+  --black: #333;
+  --white: #fff;
+  --green: #006342;
+}
+body.dark {
+  --black: #fff;
+  --white: #333;
+  --green: #00d890;
+  --greendark: #006342;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font: size 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--white);
+  transition: all 0.5s;
+}
+body.dark {
+  background: var(--greendark);
+  transition: all 0.5s;
+}
+section {
+  padding-top: 1vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+a.toggleMode {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+  background: var(--black);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+a.toggleMode i {
+  color: var(--white);
+}
+
+.logo {
+  max-width: 80px;
+  -webkit-clip-path: circle(40px at center);
+  clip-path: circle(40px at center);
+}
+
+section header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section header ul li {
+  list-style: none;
+  margin-left: 50px;
+  font-size: 1.1rem;
+}
+
+section header ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.content .learnMore {
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+  background: var(--green);
+  margin: 50px 0;
+  border-radius: 50px;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--white);
+}
+body.dark .content a {
+  font-weight: 500;
+}
+
+.content .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.content .img-box img {
+  max-width: 40vh;
+}
+
+.content .img-box::before {
+  content: "";
+  width: 20em;
+  height: 20em;
+  background: var(--green);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content .text {
+  max-width: 80vh;
+}
+
+.content .text h2 {
+  font-size: 3rem;
+  line-height: 1.4em;
+  color: var(--black);
+}
+
+.content .text h2 span {
+  font-size: 3.5rem;
+  color: var(--green);
+}
+.content .text p {
+  margin-bottom: 2em;
+  text-align: justify;
+  color: var(--black);
+}
+
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+footer a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 20px;
+  background: var(--black);
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer a fa {
+  font-size: 3rem;
+}
+
+footer a:hover {
+  background: var(--green);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
+
+/* adding the dark mode functionality */

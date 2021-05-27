@@ -1,0 +1,148 @@
+$black:#333;
+$white:#fff;
+$green:#007950;
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    font: size 62.5%;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    padding-top:10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 100vh;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.toggleMode{
+    margin-left: 40px;
+    width: 40px;
+    height: 40px;
+    background: $black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+        color: $white;
+    }
+
+}
+
+.logo
+{
+    max-width: 80px;
+    clip-path: circle(40px at center);
+}
+section header .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section header ul li
+{
+    list-style: none;
+    margin-left: 50px;
+    font-size: 1.20rem;
+    a
+    {
+        text-decoration: none;
+        color:$black;
+    }
+}
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    .learnMore{
+        width: 100%;
+        height: 100%;
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+        background: $green;
+        margin: 50px 0;
+        border-radius: 50px ;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
+.content .img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    img{
+        max-width: 40vh;
+    }
+    &::before{
+        content: '';
+        width: 20em;
+        height: 20em;
+        background: $green;
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+}
+.content .text{
+    max-width: 80vh;
+    h2{
+        font-size: 3rem;
+        line-height: 1.4em;
+        span{
+            font-size: 3.5rem;
+            color: $green;
+        }
+    }
+    p{
+        margin-bottom: 2em;
+        text-align: justify;
+    }
+}
+footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+footer a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 20px;
+    background: $black;
+    text-decoration: none;
+    color: $white;
+    fa{
+        font-size: 3rem;
+    }
+}
+footer a:hover{
+    background: $green;
+    transition: 0.3s;
+}
