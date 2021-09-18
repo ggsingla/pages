@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodVilla</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,7 +33,7 @@
         <h1 id="head">Our Cuisines</h1>
         <section>
             <figure>
-                <img src="https://source.unsplash.com/800x800/?burger" alt="">
+                <img src="https://source.unsplash.com/400x400/?burger" alt="">
                 <figcaption>
                     <div class="details">
                         <h3>Burger</h3>
@@ -85,8 +87,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUZMe68iytGj_Vd72Qb5CDYO88nQgaqwBvYg&usqp=CAU"
-                    alt="">
+                <img src="https://source.unsplash.com/400x400/?soft-drinks" alt="Soft-Drink">
                 <figcaption>
                     <div class="details">
                         <h3>Soft-Drink</h3>
@@ -99,11 +100,11 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/LE/ZW/DF/62074630/indian-rasgulla-sweets-500x500.jpeg"
+                <img src="https://source.unsplash.com/400x400/?sweets"
                     alt="">
                 <figcaption>
                     <div class="details">
-                        <h3>Rushgulla</h3>
+                        <h3>Special Sweets</h3>
                         <h3>Price &#8377; 30<span>/piece </span></h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam vel corrupti deleniti eaque quos
@@ -117,19 +118,39 @@
     <div id="contact">
         <div class="form_header">
             <h1>Contact Us</h1>
-            <img src="./assets/contact.png" id="image" alt="">
+            <img src="assets/contact.png" id="image" alt="">
         </div>
-        <div id="contactus">
-            <form class="contact_form">
-                <input type="name" id="name1" placeholder="First Name">
-                <input type="name" id="2" placeholder="last Name">
-                <input type="tel" id="phn" placeholder="Mobile Number">
-                <input type="email" id="mail" placeholder="E-Mail">
-                <textarea placeholder="Say Somthing To Us"></textarea>
-                <button id="submit">Submit</button>
-            </form>
+        <form class="contact_form">
+            <div class="name">
+                <label for="name">Name</label>
+                <input type="name" id="name" placeholder="Your Name">
+            </div>
+            <div class="details_num">
+                <label for="phn">Mobile Number</label>
+                <input type="tel" id="phn" placeholder="90XXXXXXXX">
+                
+            </div>
+            <div class="detail_email">
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" placeholder="example.mail@some.com">
+            </div>
+            <div class="msg">
+                <label for="msg">Message</label>
+                <textarea id="msg" placeholder="Say Somthing To Us"></textarea>
+            </div>
+            <button id="submit">Submit</button>
+        </form>            
         </div>
     </div>
+    <footer>
+        <p>Made with <span style="color: red;">❤</span> by <a href="https://github.com/ggsingla">Gautam Singla</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/gautam-singla-12a634211/"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/ggsingla"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/gautam_s27/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
