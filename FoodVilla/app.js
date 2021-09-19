@@ -1,5 +1,11 @@
-var navb = document.querySelector('nav');
+var burger = document.getElementById("burger-hider");
+var navItems = document.querySelector(".nav-links")
 
+burger.addEventListener("click", ()=>{
+  navItems.classList.toggle("active")
+})
+// nav bg color change function
+var navb = document.querySelector('nav');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
