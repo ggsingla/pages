@@ -1,22 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   font-size: 100%;
-  transition: all 200ms ease-in-out;
+  /* transition: all 200ms ease-in-out; */
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #00000052;
   border-radius: 10px;
-
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--accent);
   border-radius: 10px;
 }
@@ -48,7 +47,7 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0.5em clamp(1em , 5vw, 5vw);
+  padding: 0.5em clamp(1em, 5vw, 5vw);
   position: fixed;
   top: 0;
   transition: all 200ms ease-in-out;
@@ -83,7 +82,7 @@ nav .nav-links li:hover {
 nav #burger-hider {
   display: none;
 }
-nav #burger-hider .burger{
+nav #burger-hider .burger {
   width: 2rem;
   height: 1rem;
   display: flex;
@@ -92,37 +91,36 @@ nav #burger-hider .burger{
   align-items: center;
   cursor: pointer;
 }
-nav .burger .line{
-  height: 0.10rem;
+nav .burger .line {
+  height: 0.1rem;
   width: 100%;
   border-radius: 10px;
   background-color: white;
-
 }
 
-@media screen and (max-width:700px) {
-  nav #burger-hider{
+@media screen and (max-width: 700px) {
+  nav #burger-hider {
     display: block;
     z-index: 2;
   }
-  nav .nav-links{
+  nav .nav-links {
     display: none;
     transform: translateX(40vw);
     transition: transform 500ms ease-in-out;
   }
-  nav .nav-links.active{
+  nav .nav-links.active {
     display: block;
     background-color: var(--bg-color);
     height: 100vh;
     position: fixed;
     transition: transform 500ms ease-in-out;
- top: 0;
+    top: 0;
     right: 0;
-    width: 40%;
-    font-size: 120%;
+    width: clamp(250px, 40vw, 100%);
+    font-size: 1.5rem;
     transform: translateX(0vw);
   }
-  nav .nav-links.active ul{
+  nav .nav-links.active ul {
     position: absolute;
     top: 0;
     display: flex;
@@ -130,13 +128,11 @@ nav .burger .line{
     height: 100%;
     width: 100%;
     transition: transform 500ms ease-in-out;
+  }
 }
-  
-}
-@media screen and (max-width:450px) {
-  nav .nav-links.active{
+@media screen and (max-width: 450px) {
+  nav .nav-links.active {
     transition: transform 500ms ease-in-out;
-
     width: 55%;
   }
 }
@@ -151,80 +147,86 @@ nav .burger .line{
   flex-direction: column;
   align-items: flex-end;
   padding: 2em;
-  background: url("https://source.unsplash.com/1400x900/?food");
+  background: url('https://source.unsplash.com/1400x900/?food');
   background-size: cover;
   animation: slider 16s cubic-bezier(1, -0.02, 0.29, 1.01) infinite;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
-#animation .bg-grad{
+#animation .bg-grad {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.651) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.651) 100%
+  );
 }
-#animation h1{
+#animation h1 {
   font-size: clamp(4rem, 10vw, 8rem);
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.247);
   line-height: 90%;
   color: var(--accent);
   z-index: 1;
 }
-#animation p{
+#animation p {
   text-overflow: ellipsis;
   overflow: hidden;
   color: #ffffff;
   font-weight: 300;
   z-index: 1;
-  font-size: clamp(1rem, 2vw , 18px);
+  font-size: clamp(1rem, 2vw, 18px);
   text-align: right;
   width: min(500px, 100%);
 }
-@media screen and (max-width:450px) {
- #animation{
+@media screen and (max-width: 450px) {
+  #animation {
     align-items: center;
-    gap : 2em;
+    gap: 2em;
     justify-content: center;
     border-radius: 0;
   }
-  #animation .bg-grad{
-    background:rgba(0, 0, 0, 0.651);
+  #animation .bg-grad {
+    background: rgba(0, 0, 0, 0.651);
   }
-  #animation p{
+  #animation p {
     text-align: center;
     width: 90%;
   }
 }
 @keyframes slider {
   0% {
-    background: url("https://source.unsplash.com/1400x900/?food");
+    background: url('https://source.unsplash.com/1400x900/?food');
   }
   25% {
-    background: url("https://source.unsplash.com/1400x900/?pizza");
+    background: url('https://source.unsplash.com/1400x900/?pizza');
   }
   50% {
-    background: url("https://source.unsplash.com/1400x900/?milkshake");
+    background: url('https://source.unsplash.com/1400x900/?milkshake');
   }
   75% {
-    background: url("https://source.unsplash.com/1400x900/?sandwich");
+    background: url('https://source.unsplash.com/1400x900/?sandwich');
   }
-  100%{
-    background: url("https://source.unsplash.com/1400x900/?food");
+  100% {
+    background: url('https://source.unsplash.com/1400x900/?food');
   }
 }
-
+#menu {
+  margin-block:10em;
+}
 #head {
   text-align: center;
-  font-size: 3.5rem;
-  margin-block: 2em 1em;
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  margin-bottom:1em;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80vw;
-  margin-bottom: 5em;
+  justify-content: center;
+  gap: 2em;
+  width: 90vw;
 }
 
 figure {
@@ -232,10 +234,8 @@ figure {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width:clamp(280px, 350px, 30%);
-  /* width:30%; */
+  width: clamp(300px, 350px, 30%);
   box-shadow: 0px 0px 0px 1px var(--accent);
-  margin-block: 15px;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
   overflow: hidden;
@@ -246,17 +246,17 @@ figcaption {
   display: grid;
   place-items: center;
 }
-figcaption .details{
+figcaption .details {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-figcaption .details h3 span{
+figcaption .details h3 span {
   font-size: small;
   font-weight: lighter;
 }
 
-figcaption .details h3:nth-child(2){
+figcaption .details h3:nth-child(2) {
   color: var(--accent);
 }
 
@@ -291,43 +291,49 @@ figure:hover {
 }
 
 @keyframes bounce {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  25%{
+  25% {
     transform: translateY(-0.5em);
   }
-  50%{
+  50% {
     transform: translateY(0);
-
   }
-  75%{
+  75% {
     transform: translateY(-0.5em);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
+
+/* Contact us Start */
+
 #contact {
-  /* border: 2px solid rgb(255, 255, 255); */
+  align-items: center;
   background-color: var(--bg-color);
   border-radius: 15px;
-  width: 80%;
-  overflow: hidden;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.616);
   display: flex;
   justify-content: space-between;
-  padding: 2em 4em;
-  box-shadow:  0px 2px 20px rgba(0, 0, 0, 0.616);
+  gap : 3em;
+  margin-block: 2em;
+  overflow: hidden;
+  padding: 2em 5%;
+  width: clamp(40vw, 1200px, 100%);
 }
-.form_header{
+.form_header h1{
+  font-size:clamp(2rem, 8vw, 3rem);
+  white-space: nowrap;
+  text-align: center;
+}
+.form_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  width: 30%;
+  justify-content: center;
+  width: 40%;
 }
 .form_header img {
   height: 300px;
@@ -338,23 +344,25 @@ figure:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: min(100%, 600px);
 }
-.contact_form>*{
+.contact_form > * {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 2em;
 }
-.contact_form input, textarea,button{
+.contact_form input,
+textarea,
+button {
   background-color: transparent;
   border: none;
   outline: none;
-  border-bottom: 2px solid var(--accent) ;
+  border-bottom: 2px solid var(--accent);
 }
-.contact_form button{
+.contact_form button {
   padding-block: 0.5em;
-  width: 30%;
+  width: clamp(100px, 30%, 250px);
   margin-top: 4em;
   outline: none;
   border: none;
@@ -366,38 +374,60 @@ figure:hover {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  #contact{
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    background:#131313 ;
+    padding: 2em 5%;
+  }
+ 
+}
+@media screen and (max-width: 750px) {
+  #contact{
+    flex-direction: column;
+    padding: 2em 5%;
+  }
+  .form_header img{
+    display: none;
+  }
+  .contact_form button{
+    margin-inline: auto;
+  }
+}
+/* Contact us End */
+
 /* footer start */
 
-footer{
-  background:black;
+footer {
+  background-color:#080808 ;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 1em;
-  margin-top: 2em;
 }
 
 footer .social-links > * {
   margin-right: 1em;
   font-size: 1.2rem;
-  
 }
-footer .social-links a{
+footer .social-links a {
   transition: color 300ms ease-in-out;
 }
-footer .social-links a:hover{
+footer .social-links a:hover {
   color: var(--accent);
 }
-footer p a{
+footer p a {
   position: relative;
   z-index: 2;
   transition: color 300ms ease-in-out;
 }
-footer p a:hover{
+footer p a:hover {
   color: var(--accent);
 }
-footer p a::after{
+footer p a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -409,12 +439,12 @@ footer p a::after{
   background-color: var(--accent);
 }
 
-@media screen and (max-width:700px) {
-  footer{
+@media screen and (max-width: 700px) {
+  footer {
     flex-direction: column;
   }
-  footer p{
-    margin-block : 0.3em;
+  footer p {
+    margin-block: 0.3em;
   }
 }
 @media screen and (max-width: 300px) {
