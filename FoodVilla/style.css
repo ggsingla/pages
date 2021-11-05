@@ -48,7 +48,7 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0.5em 2em;
+  padding: 0.5em clamp(1em , 5vw, 5vw);
   position: fixed;
   top: 0;
   transition: all 200ms ease-in-out;
@@ -77,7 +77,7 @@ nav .nav-links li {
 }
 nav .nav-links li:hover {
   cursor: pointer;
-  font-weight: 600;
+  transform: scale(1.1);
   color: var(--accent);
 }
 nav #burger-hider {
@@ -144,7 +144,7 @@ nav .burger .line{
 
 #animation {
   height: 85vh;
-  width: 90%;
+  width: clamp(90%, 1000px, 100%);
   border-radius: 20px;
   display: flex;
   justify-content: flex-end;
@@ -153,8 +153,8 @@ nav .burger .line{
   padding: 2em;
   background: url("https://source.unsplash.com/1400x900/?food");
   background-size: cover;
-  background-repeat: no-repeat;
   animation: slider 16s cubic-bezier(1, -0.02, 0.29, 1.01) infinite;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -164,18 +164,36 @@ nav .burger .line{
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.651) 100%);
 }
 #animation h1{
-  font-size: 8rem;
+  font-size: clamp(4rem, 10vw, 8rem);
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.247);
   line-height: 90%;
   color: var(--accent);
   z-index: 1;
 }
 #animation p{
-  max-width: 40%;
-  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #ffffff;
   font-weight: 300;
   z-index: 1;
+  font-size: clamp(1rem, 2vw , 18px);
+  text-align: right;
+  width: min(500px, 100%);
+}
+@media screen and (max-width:450px) {
+ #animation{
+    align-items: center;
+    gap : 2em;
+    justify-content: center;
+    border-radius: 0;
+  }
+  #animation .bg-grad{
+    background:rgba(0, 0, 0, 0.651);
+  }
+  #animation p{
+    text-align: center;
+    width: 90%;
+  }
 }
 @keyframes slider {
   0% {
