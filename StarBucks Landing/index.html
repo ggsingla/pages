@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="icon" href="Assets/Logo.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Starbucks</title>
-  </head>
-  <body>
-    <section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="icon" href="Assets/Logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"/>
+  <title>Starbucks</title>
+</head>
+
+<body>
+    <section id = "main">
+      <nav>
+        <img src="Assets/Starbucks-Logo.png" alt="logo_starbucks" class="logo" />
+        <div class="nav-links">
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" class="toggleMode"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="burger-hider">
+          <div class="burger active">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+      </div>
+      </nav>
       <header>
-        <img
-          src="Assets/Starbucks-Logo.png"
-          alt="logo_starbucks"
-          class="logo"
-        />
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">What's new</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#" class="toggleMode"
-              ><i class="fa fa-moon-o" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-      </header>
-      <div class="content">
         <div class="text">
-          <h2>It's not just Milkshake <br />It's <span>Starbucks</span></h2>
+          <h2>It's not just Milkshake, <br />It's <span>Starbucks</span></h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            dignissimos incidunt suscipit neque voluptas, est voluptatem, ea
-            consequatur deleniti repellendus saepe placeat reiciendis cupiditate
-            sit maiores ipsum accusamus a eaque totam molestias. Laborum
-            voluptatibus maxime beatae fugiat alias corporis amet quaerat
-            blanditiis itaque earum quisquam soluta ipsam sit quod dolor non,
-            fuga qui sapiente neque at perspiciatis. Minima, provident eligendi!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
           </p>
           <a href="#" class="learnMore">Learn More</a>
+          
         </div>
         <div class="img-box">
           <img src="Assets/Milkshake.png" alt="Milkshake" />
         </div>
+      </header>
+      <div class="social-links">
+        <a href="#" class="facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
       </div>
-      <footer>
-        <a href="#" class="facebook"
-          ><i class="fa fa-facebook fa-lg" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="twitter"
-          ><i class="fa fa-twitter fa-lg" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="instagram"
-          ><i class="fa fa-instagram fa-lg" aria-hidden="true"></i
-        ></a>
-      </footer>
     </section>
-    <script src="app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
+
 </html>
