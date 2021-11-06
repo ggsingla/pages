@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+      17.52deg,
+      rgba(83, 3, 253, 0.53) 0%,
+      rgba(83, 3, 253, 0) 42.37%
+    ),
+    linear-gradient(
+      243.18deg,
+      rgba(136, 2, 227, 0.69) 0%,
+      rgba(218, 10, 250, 0) 50%
+    ),
+    linear-gradient(116.82deg, #fd0340 0%, #e302aa 100%);
+  overflow: hidden;
+}
+.circle {
+  border-radius: 50%;
+  background: #f8f5ff;
+  opacity: 0.5;
+  position: absolute;
+  aspect-ratio: 1;
+  z-index: -1;
+}
+.left {
+  width: 50em;
+  bottom: -60%;
+  left: -50%;
+}
+.right {
+  width: 20em;
+  top: -10%;
+  right: -10%;
+}
+section {
+  height: 85vh;
+  width: 70vw;
+  background: rgba(8, 0, 25, 0.3);
+  box-shadow: -15px 17px 40px rgba(8, 0, 25, 0.25);
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  padding: 3em 5em;
+  background: rgba(8, 0, 25, 0.4);
+  backdrop-filter: blur(100px);
+  border-radius: 20px 0 0 20px;
+  box-shadow: inset 0px 4px 3px rgba(248, 245, 255, 0.26);
+  z-index: 1;
+  gap: 3em;
+  /* Note: backdrop-filter has minimal browser support */
+}
+.main {
+  height: 100%;
+  flex: 1;
+  border-radius: 0 20px 20px 0;
+  backdrop-filter: blur(50px);
+  box-shadow: inset -3px 4px 3px rgba(248, 245, 255, 0.26);
+}
