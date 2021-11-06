@@ -1,0 +1,25 @@
+body {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+      17.52deg,
+      rgba(83, 3, 253, 0.53) 0%,
+      rgba(83, 3, 253, 0) 42.37%
+    ),
+    linear-gradient(
+      243.18deg,
+      rgba(136, 2, 227, 0.69) 0%,
+      rgba(218, 10, 250, 0) 50%
+    ),
+    linear-gradient(116.82deg, #fd0340 0%, #e302aa 100%);
+}
+section.main {
+  height: 85vh;
+  width: 70vw;
+  background: rgba(8, 0, 25, 0.3);
+  box-shadow: -15px 17px 40px rgba(8, 0, 25, 0.25),
+    inset -3px 4px 3px rgba(248, 245, 255, 0.26);
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+  margin: auto;
+}
