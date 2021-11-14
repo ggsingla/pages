@@ -8,6 +8,19 @@
   );
 }
 
+/* **************** */
+/* Utility Classes */
+/* ************** */
+
+.grad-text {
+  /* Adding Gradient in text */
+
+  background: var(--icon-grad);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* ************** */
 .user-profile {
   display: flex;
   align-items: center;
@@ -37,13 +50,6 @@
   width: 30px;
 }
 .item {
-  /* Adding Gradient in text */
-
-  background: var(--icon-grad);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  
-  /* ********************** */
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -61,4 +67,73 @@
   white-space: nowrap;
   align-items: center;
   justify-content: center;
+}
+/* ************************ */
+/* Main Section Starts Here */
+/* ************************ */
+
+.main {
+  padding: 3em 2em;
+}
+.main h1 {
+  color: hsl(var(--white));
+  font-size: 3rem;
+}
+form {
+  background: #08001966;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 0.5em 1.5em;
+  margin-block: 1em 2.5em;
+}
+form input[type='text'],
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.card-array {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 90%;
+}
+.card {
+  display: flex;
+  background: #08001980;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 3em;
+}
+.card .game-details {
+  color: hsl(var(--white));
+  flex: 2;
+}
+.card h2{
+  flex: 0.5;
+}
+.progress{
+  background: rgba(8, 0, 25, 0.8);
+border-radius: 1em;
+height: 1.5em;
+width: 100%;
+overflow: hidden;
+margin-top: 1em;
+
+}
+.bar{
+  background: linear-gradient(93.05deg, #FE144D 16.77%, #8802E3 134.18%);
+height: 100%;
+}
+.card .game-details meter{
+  height: 2em;
+  width: 100%;
+}
+.card h2 {
+  font-weight: 700;
+  font-size: 2rem;
 }

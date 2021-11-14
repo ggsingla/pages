@@ -62,7 +62,6 @@ section {
   box-shadow: inset 0px 4px 3px rgba(248, 245, 255, 0.26);
   z-index: 1;
   gap: 3em;
-  /* Note: backdrop-filter has minimal browser support */
 }
 .main {
   height: 100%;
