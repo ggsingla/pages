@@ -1,10 +1,8 @@
-@import './reset.css';
-
-::root {
-  --clr-accent: hsla(253, 100%, 58%, 1);
-  --clr-grey-100: hsla(0, 0%, 97%, 1);
-  --clr-grey-500: hsla(0, 0%, 70%, 1);
-  --clr-grey-900: hsla(0, 0%, 13%, 1);
+:root {
+  --clr-accent: hsl(253 100% 58%);
+  --clr-grey-100: hsl(0 0% 97%);
+  --clr-grey-500: hsl(0 0% 70%);
+  --clr-grey-900: hsl(0 0% 13%);
 }
 /* //////////////// */
 /* Reset */
@@ -29,6 +27,18 @@ ol[role='list'] {
   list-style: none;
 }
 
+i {
+  font-style: normal;
+}
+a {
+  color: var(--clr-grey-900);
+  text-decoration: none;
+  transition: color 100ms ease-in-out;
+}
+a:hover {
+  color: var(--clr-accent);
+  transition: color 100ms ease-in-out;
+}
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -76,4 +86,208 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: var(--clr-grey-900);
+  display: grid;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75rem;
+}
+p {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+main {
+  display: grid;
+}
+/* ///////////////////// */
+/* Utils */
+/* /////////////////// */
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    padding-inline: 2em;
+  }
+}
+.button {
+  background-color: var(--clr-accent);
+  color: var(--clr-grey-100);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Section Header */
+
+.section-header {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--clr-grey-500);
+  position: relative;
+  margin-block: 2em;
+}
+.section-header span {
+  background-color: white;
+  display: inline-block;
+  padding-inline: 1em;
+  margin-left: -1em;
+}
+.section-header:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-grey-500);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+/* ///////////////// */
+
+/* Header */
+.primary-header {
+  padding-block: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.primary-header .logo {
+  display: flex;
+  align-items: center;
+}
+.primary-header .logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.primary-header .logo img {
+  height: 2rem;
+  margin-right: 1em;
+}
+.primary-header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* Hero Section */
+#hero {
+  margin-block: 5em;
+}
+#hero p {
+  width: 600px;
+  max-width: 100%;
+  margin-block: 1em 2em;
+}
+#hero .button {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-inline: 1.5em;
+}
+
+/* Services */
+#services {
+  margin-block: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5em 10em;
+}
+#services .service {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: calc(1.5 * 1.5) em 1fr;
+  gap: 0.5em 2em;
+}
+
+.service svg {
+  grid-row: span 2;
+  align-self: center;
+}
+.service h3 {
+  align-self: flex-end;
+}
+.service p {
+  align-self: flex-start;
+}
+/* Clients */
+
+#clients {
+  margin-block: 5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5em;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+#clients img {
+  flex-basis: 1;
+}
+
+/* Team */
+
+#team {
+  margin-block: 5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4em;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+#team .team-member {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.team-member img {
+  border-radius: 50%;
+  height: 5em;
+}
+
+/* Footer */
+
+.primary-footer {
+  background-color: var(--clr-grey-100);
+}
+
+.primary-footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em;
+}
+
+.primary-footer .container img {
+  height: 2rem;
+}
+.primary-footer .container ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.primary-footer .container ul a {
+  color: var(--clr-grey-500);
+  font-size: 1.2em;
+  transition: color 100ms ease-in-out;
+}
+.primary-footer .container ul a:hover {
+  color: var(--clr-accent);
+  transition: color 100ms ease-in-out;
 }
