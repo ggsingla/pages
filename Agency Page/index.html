@@ -5,12 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Sytle Sheet -->
+    <link rel="stylesheet" href="./Styles/style.css">
     <title>Agency Page</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <header class="primary-header">
+        <div class="logo"><img src="./Assets/Icons/mamon-logo.svg" alt="Logo"> <span>mamon</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><button class="button">Contact Us</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>We're an independent development agency.</h1>
+            <p>We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and
+                Web applications enriched with user-centered visual experiences.</p>
+            <button class="button">Contact Us</button>
+        </section>
+        <header class="section-header">Our Services</header>
+        <section id="services">
+            <div class="service">
+                <img src="./Assets/Icons/smartphone.png" alt="Smartphone Icon">
+                <h3>Mobile Development</h3>
+                <p>We develop mobile apps for all contemporary
+                    mobile platforms. Mamon team builds
+                    native and cross-platform solutions.</p>
+            </div>
+            <div class="service">
+                <img src="./Assets/Icons/monitor.png" alt="Monitor Icon">
+                <h3>Web Development</h3>
+                <p>Mamon offers full range of services from various
+                    CMS and frameworks based websites to complex
+                    ERP/CRM solutions and e-commerce stores.</p>
+            </div>
+            <div class="service">
+                <img src="./Assets/Icons/layers.png" alt="Layers Icon">
+                <h3>Product Design</h3>
+                <p>We create design given the product audience,
+                    goal, business domain, technology and
+                    the platform for the solution.</p>
+            </div>
+            <div class="service">
+                <img src="./Assets/Icons/test.png" alt="Quality Test Icon">
+                <h3>Quality Assurance</h3>
+                <p>Our QA team ensures high standard of
+                    quality of products delivered.</p>
+            </div>
+        </section>
+        <header class="section-header">Our Clients</header>
+        <section id="clients"></section>
+        <header class="section-header">Our Team</header>
+        <section id="team"></section>
+    </main>
+    <footer class="footer-primary">
+        <img src="./Assets/Icons/mamon-logo.svg" alt="Logo">
+        <div class="social-links">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

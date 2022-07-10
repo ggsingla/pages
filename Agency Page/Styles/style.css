@@ -1,7 +1,10 @@
-:root {
+@import './reset.css';
+
+::root {
   --clr-accent: hsla(253, 100%, 58%, 1);
   --clr-grey-100: hsla(0, 0%, 97%, 1);
   --clr-grey-500: hsla(0, 0%, 70%, 1);
+  --clr-grey-900: hsla(0, 0%, 13%, 1);
 }
 /* //////////////// */
 /* Reset */
