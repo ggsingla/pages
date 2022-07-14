@@ -33,3 +33,12 @@ for (const key in teamNames) {
     i++
   }
 }
+
+// Nav Menu Functionality
+const navMenu = (e) => {
+  const navList = document.getElementById('navLinks')
+  e.addEventListener('click', () => {
+    navList.classList.toggle('show')
+    e.classList.toggle('fix')
+  })
+}
