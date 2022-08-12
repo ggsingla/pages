@@ -22,7 +22,9 @@ for (let i = 1; i <= 12; i++) {
   client.alt = `Client ${i}`
   clients.appendChild(client)
 }
+// Populating the Team Section
 let i = 1
+
 for (const key in teamNames) {
   if (Object.hasOwnProperty.call(teamNames, key)) {
     const el = teamNames[key]
@@ -42,3 +44,16 @@ const navMenu = (e) => {
     e.classList.toggle('fix')
   })
 }
+
+// Show more in the team section
+
+const showMore = document.getElementById('show-more')
+
+showMore.addEventListener('click', () => {
+  team.classList.toggle('show-more')
+  if (showMore.textContent == 'Show More') {
+    showMore.innerText = 'Show Less'
+  } else {
+    showMore.innerText = 'Show More'
+  }
+})

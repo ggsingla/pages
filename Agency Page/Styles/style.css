@@ -250,6 +250,17 @@ main {
   #burger {
     display: flex;
   }
+  #team.show-more {
+    max-height: 40em;
+    overflow: hidden;
+    mask-image: linear-gradient(180deg, white, white, transparent);
+    -webkit-mask-image: linear-gradient(180deg, white, white, transparent);
+  }
+  .container[data-section='team'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* Hero Section */
 #hero {
@@ -312,12 +323,32 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4em;
   place-items: center;
+  transition: all 300ms ease-in;
 }
 #team .team-member {
   display: flex;
   align-items: center;
   gap: 2em;
 }
+
+#show-more {
+  display: block;
+  background-color: white;
+  color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  margin-block: -1.25em 1.5em;
+}
+#show-more:hover {
+  background-color: var(--clr-accent);
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #show-more {
+    display: none;
+  }
+}
+
 .team-member img {
   border-radius: 50%;
   height: 5em;
