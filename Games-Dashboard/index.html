@@ -13,84 +13,90 @@
 </head>
 
 <body>
-  <section>
-    <!-- Styling Elements -->
-    <div class="circle left"></div>
-    <div class="circle right"></div>
-    <!-- ---------------- -->
-    <!-- Side Bar -->
-    <div class="sidebar">
-      <div class="user-profile">
-        <img src="/assets/User Image.png" alt="User-image" class="dp" />
-        <h3 class="username">Gautam Singla</h3>
-        <p class="status">free member</p>
-      </div>
-      <div class="menu">
-        <a href="#" class="menu-item">
-          <img src="./assets/Twitch.png" alt="" />
-          <h2 class="item grad-text">Streams</h2>
-        </a>
-        <a href="#" class="menu-item">
-          <img src="./assets/Steam.png" alt="" />
-          <h2 class="item grad-text">Games</h2>
-        </a>
-        <a href="#" class="menu-item">
-          <img src="./assets/Upcoming.png" alt="" />
-          <h2 class="item grad-text">Upcoming</h2>
-        </a>
-        <a href="#" class="menu-item">
-          <img src="./assets/Library.png" alt="" />
-          <h2 class="item grad-text">Library</h2>
-        </a>
-      </div>
-      <button><img src="./assets/Crown.svg" alt="" /> Get Membership</button>
-    </div>
-    <div class="main">
-      <h1>Active Games</h1>
+  <!-- Styling Elements -->
+  <div class="circle left"></div>
+  <div class="circle right"></div>
+  <!-- ---------------- -->
+  <div class="container">
 
-      <form method="POST">
-        <input type="text" placeholder="Search" name="search" />
-        <button type="submit">
-          <img src="./assets/searchIcon.svg" alt="" />
-        </button>
-      </form>
-      <div class="card-array">
-        <div class="card">
-          <img class="card-image" src="./assets/spiderman.png" alt="spiderman" />
-          <div class="game-details">
-            <h3>SpiderMan - Miles Moralas</h3>
-            <p>PS5 Version</p>
-            <div class="progress">
-              <div class="bar" style="width: 60%"></div>
-            </div>
+    <section>
+
+      <!-- Side Bar -->
+      <div class="sidebar">
+        <div class="user-profile">
+          <img src="./assets/user.png" alt="User-image" id="user-image" />
+          <div class="user-details">
+            <h3 class="username">Gautam Singla</h3>
+            <p class="status">free member</p>
           </div>
-          <h2 class="grad-text">60%</h2>
         </div>
-        <div class="card">
-          <img class="card-image" src="./assets/assassins.png" alt="assassins" />
-          <div class="game-details">
-            <h3>Assassins Creed Valhalla</h3>
-            <p>PS5 Version</p>
-            <div class="progress">
-              <div class="bar" style="width: 20%"></div>
-            </div>
-          </div>
-          <h2 class="grad-text">20%</h2>
+        <div class="menu">
+          <a href="#" class="menu-item">
+            <img src="./assets/Twitch.png" alt="" />
+            <h2 class="item grad-text">Streams</h2>
+          </a>
+          <a href="#" class="menu-item">
+            <img src="./assets/Steam.png" alt="" />
+            <h2 class="item grad-text">Games</h2>
+          </a>
+          <a href="#" class="menu-item">
+            <img src="./assets/Upcoming.png" alt="" />
+            <h2 class="item grad-text">Upcoming</h2>
+          </a>
+          <a href="#" class="menu-item">
+            <img src="./assets/Library.png" alt="" />
+            <h2 class="item grad-text">Library</h2>
+          </a>
         </div>
-        <div class="card">
-          <img class="card-image" src="./assets/sackboy.png" alt="sackboy" />
-          <div class="game-details">
-            <h3>Slackboy - A Big Adventure</h3>
-            <p>PS5 Version</p>
-            <div class="progress">
-              <div class="bar" style="width: 90%"></div>
+        <button><img src="./assets/Crown.svg" alt="" /> Get Membership</button>
+      </div>
+      <div class="main">
+        <h1>Active Games</h1>
+
+        <form method="POST">
+          <input type="text" placeholder="Search" name="search" />
+          <button type="submit" title="Search">
+            <img src="./assets/searchIcon.svg" alt="" />
+          </button>
+        </form>
+        <div class="card-array">
+          <div class="card">
+            <img class="card-image" src="./assets/spiderman.png" alt="spiderman" />
+            <div class="game-details">
+              <h3>SpiderMan - Miles Moralas</h3>
+              <p>PS5 Version</p>
+              <div class="progress">
+                <div class="bar" style="width: 60%"></div>
+              </div>
             </div>
+            <h2 class="grad-text">60%</h2>
           </div>
-          <h2 class="grad-text">90%</h2>
+          <div class="card">
+            <img class="card-image" src="./assets/assassins.png" alt="assassins" />
+            <div class="game-details">
+              <h3>Assassins Creed Valhalla</h3>
+              <p>PS5 Version</p>
+              <div class="progress">
+                <div class="bar" style="width: 20%"></div>
+              </div>
+            </div>
+            <h2 class="grad-text">20%</h2>
+          </div>
+          <div class="card">
+            <img class="card-image" src="./assets/sackboy.png" alt="sackboy" />
+            <div class="game-details">
+              <h3>Slackboy - A Big Adventure</h3>
+              <p>PS5 Version</p>
+              <div class="progress">
+                <div class="bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <h2 class="grad-text">90%</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 
 </html>
