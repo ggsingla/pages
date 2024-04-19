@@ -4,10 +4,10 @@ This is a collection of landing pages that I have created for various projects. 
 
 ## Live Demo Links
 
-- [Agency Page](https://ggsingla.github.io/Landing_Pages/Agency%20Page/)
-- [Food Villa](https://ggsingla.github.io/Landing_Pages/FoodVilla/)
-- [Games Dashboard](https://ggsingla.github.io/Landing_Pages/Games-Dashboard/)
-- [StarBucks](https://ggsingla.github.io/Landing_Pages/StarBucks/)
+- [Agency Page](https://ggsingla.github.io/pages/Agency%20Page/)
+- [Food Villa](https://ggsingla.github.io/pages/FoodVilla/)
+- [Games Dashboard](https://ggsingla.github.io/pages/Games-Dashboard/)
+- [StarBucks](https://ggsingla.github.io/pages/StarBucks/)
 
 ## Contributing
 
