@@ -1,6 +1,6 @@
-# Landing Pages
+# Pages
 
-This is a collection of landing pages that I have created for various projects. Each landing page is a separate project and is built using HTML, CSS, and JavaScript. The purpose of these landing pages is to provide a simple, clean, and responsive design that can be used to promote a product or service. Each landing page is designed to be a single page and is built using a mobile-first approach.
+This is a collection of pages that I have created for various projects and also as fun side projects. Each page is a separate project and is built using HTML, CSS, and JavaScript. The purpose of these landing pages is to provide a simple, clean, and responsive design that can be used to promote a product or service. Each landing page is designed to be a single page and is built using a mobile-first approach.
 
 ## Live Demo Links
 
